@@ -2,7 +2,122 @@
 <html lang="en">
 <head>
     <style>
-       
+        body{
+            margin: 0;
+            font-family: 'roboto';
+            background: linear-gradient( #8b6334, #5e3f10);
+            color: #f5f5f5;
+        }
+
+        body > div{
+            max-width: 900px;
+            margin: 40px auto;
+        }
+
+        .titulo{
+            text-align: center;
+        }
+
+        .titulo h1{
+            font-family: 'Roboto' ;
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-style: italic;
+            
+        }
+
+        .descricao{
+            text-align: center;
+            font-size: 20px;
+            line-height: 1.5;
+            padding: 0 20px;
+            opacity: 0.9;
+        }
+
+        .links{
+            background: rgba(255,255,255,0.05);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+        }
+
+        .links h3{
+            margin-top: 0;
+            color: #ffffff;
+        }
+
+        .links a{
+            display: inline-block;
+            margin: 8px 10px 8px 0;
+            padding: 10px 18px;
+            background: #ffffff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .links a:hover{
+            background: white;
+            transform: scale(1.05);
+        }
+
+        .musica{
+            background: rgba(255,255,255,0.05);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+        }
+
+        summary{
+            font-weight: bold;
+            font-size: 18px;
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+        pre{
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+            max-height: 300px;
+            overflow-y: auto;
+            padding: 15px;
+            background: rgba(0,0,0,0.4);
+            border-radius: 10px;
+            margin-top: 15px;
+            line-height: 1.6;
+        }
+
+        .imagens{
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .imagens img{
+            width: 170px;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+            transition: 0.4s;
+        }
+
+        .imagens img:hover{
+            transform: scale(1.1);
+        }
+
+        .frase{
+            text-align: center;
+            font-size: 20px;
+            font-style: italic;
+            margin-top: 30px;
+            color: #ffffff;
+        }
+
     </style>
 
     <meta charset="UTF-8">
@@ -10,172 +125,178 @@
     <title>Seu Jorge</title>
 </head>
 <body>
-    <center><h1>Seu Jorge</h1></center>
-    <center><p>Seu Jorge é um cantor, compositor e ator brasileiro, conhecido por sua voz única e estilo musical que mistura samba, rock e MPB.<br> Ele ganhou reconhecimento internacional por sua participação no filme "Cidade de Deus" e por suas performances musicais. <br> Seu Jorge é considerado um dos artistas mais influentes da música brasileira contemporânea.</p></center>
+    <div class="titulo">
+        <h1> Seu Jorge</h1>
+    </div>
+    <div class="descricao">
+        <p>Seu Jorge é um cantor, compositor e ator brasileiro, conhecido por sua voz única e estilo musical que mistura samba, rock e MPB.<br> Ele ganhou reconhecimento internacional por sua participação no filme "Cidade de Deus" e por suas performances musicais. <br> Seu Jorge é considerado um dos artistas mais influentes da música brasileira contemporânea.</p>
+    </div>
 
+    <div class="links">
     <h3><b>Links para Musicas:</b></h3>
-    <a href="https://www.youtube.com/watch?v=uWWMtgPwtOg" target="_blank"><q>Mina do condomínio</q></a><br>
-    <a href="https://www.youtube.com/watch?v=BwGZKIx5FN8" target="_blank"><q>Amiga da minha mulher</q></a><br>
-    <a href="https://www.youtube.com/watch?v=bWSn9jL1g7I&list=RDbWSn9jL1g7I&start_radio=1" target="_blank"><q>Burguesinha</q></a><br>
+        <a href="https://www.youtube.com/watch?v=uWWMtgPwtOg" target="_blank"><q>Mina do condomínio</q></a><br>
+        <a href="https://www.youtube.com/watch?v=BwGZKIx5FN8" target="_blank"><q>Amiga da minha mulher</q></a><br>
+        <a href="https://www.youtube.com/watch?v=bWSn9jL1g7I&list=RDbWSn9jL1g7I&start_radio=1" target="_blank"><q>Burguesinha</q></a><br>
+    </div>
 
-    <h3>Letra da música:</h3>
-    <details>
-        <summary>Mina do condomínio</summary>
-        <pre>
-           <center> 
-            Tô namorando aquela mina
-            Mas não sei se ela me namora
-            Mina maneira do condomínio
-            Lá do bairro onde eu moro
+    <div class="musica">
+        <h3>Letra da música:</h3>
+        <details>
+            <summary>Mina do condomínio</summary>
+            <pre>
+                Tô namorando aquela mina
+                Mas não sei se ela me namora
+                Mina maneira do condomínio
+                Lá do bairro onde eu moro
 
-            Tô namorando aquela mina
-            Mas não sei se ela me namora
-            Mina maneira do condomínio
-            Lá do bairro onde eu moro
+                Tô namorando aquela mina
+                Mas não sei se ela me namora
+                Mina maneira do condomínio
+                Lá do bairro onde eu moro
 
-            Seu cabelo me alucina
-            Sua boca me devora
-            Sua voz me ilumina
-            Seu olhar me apavora
+                Seu cabelo me alucina
+                Sua boca me devora
+                Sua voz me ilumina
+                Seu olhar me apavora
 
-            Me perdi no seu sorriso
-            Nem preciso me encontrar
-            Não me mostre o paraíso
-            Que se eu for, não vou voltar
-            Pois eu vou
-            Eu vou
-            Eu vou
-            Eu vou
+                Me perdi no seu sorriso
+                Nem preciso me encontrar
+                Não me mostre o paraíso
+                Que se eu for, não vou voltar
+                Pois eu vou
+                Eu vou
+                Eu vou
+                Eu vou
 
-            Eu digo oi, ela nem nada
-            Passa na minha calçada
-            Dou bom dia, ela nem liga
-            Se ela chega, eu paro tudo
-            Se ela passa, eu fico todo
-            Se vem vindo, eu faço figa
+                Eu digo oi, ela nem nada
+                Passa na minha calçada
+                Dou bom dia, ela nem liga
+                Se ela chega, eu paro tudo
+                Se ela passa, eu fico todo
+                Se vem vindo, eu faço figa
 
-            Eu mando um beijo, ela não pega
-            Pisco olho, ela se nega
-            Faço pose, ela não vê
-            Jogo charme, ela ignora
-            Chego junto, ela sai fora
-            Eu escrevo, ela não lê
+                Eu mando um beijo, ela não pega
+                Pisco olho, ela se nega
+                Faço pose, ela não vê
+                Jogo charme, ela ignora
+                Chego junto, ela sai fora
+                Eu escrevo, ela não lê
 
-            Minha mina, minha amiga
-            Minha namorada
-            Minha gata, minha sina
-            Do meu condomínio
-            Minha musa, minha vida
-            Minha Monalisa
-            Minha Vênus, minha deusa
-            Quero seu fascínio
+                Minha mina, minha amiga
+                Minha namorada
+                Minha gata, minha sina
+                Do meu condomínio
+                Minha musa, minha vida
+                Minha Monalisa
+                Minha Vênus, minha deusa
+                Quero seu fascínio
 
-            Minha mina, minha amiga
-            Minha namorada
-            Minha gata, minha sina
-            Do meu condomínio
-            Minha musa, minha vida
-            Minha Monalisa
-            Minha Vênus, minha deusa
-            Quero seu fascínio
+                Minha mina, minha amiga
+                Minha namorada
+                Minha gata, minha sina
+                Do meu condomínio
+                Minha musa, minha vida
+                Minha Monalisa
+                Minha Vênus, minha deusa
+                Quero seu fascínio
 
-            Tô namorando aquela mina
-            Mas não sei se ela me namora
-            Mina maneira do condomínio
-            Lá do bairro onde eu moro
+                Tô namorando aquela mina
+                Mas não sei se ela me namora
+                Mina maneira do condomínio
+                Lá do bairro onde eu moro
 
-            Tô namorando aquela mina
-            Mas não sei se ela me namora
-            Mina maneira do condomínio
-            Lá do bairro onde eu moro
+                Tô namorando aquela mina
+                Mas não sei se ela me namora
+                Mina maneira do condomínio
+                Lá do bairro onde eu moro
 
-            Seu cabelo me alucina
-            Sua boca me devora
-            Sua voz me ilumina
-            Seu olhar me apavora
+                Seu cabelo me alucina
+                Sua boca me devora
+                Sua voz me ilumina
+                Seu olhar me apavora
 
-            Me perdi no seu sorriso
-            Nem preciso me encontrar
-            Não me mostre o paraíso
-            Que se eu for, não vou voltar
-            Eu vou
-            Eu vou
-            Eu vou, eu vou, eu vou, eu vou, eu vou
-            Eu vou
+                Me perdi no seu sorriso
+                Nem preciso me encontrar
+                Não me mostre o paraíso
+                Que se eu for, não vou voltar
+                Eu vou
+                Eu vou
+                Eu vou, eu vou, eu vou, eu vou, eu vou
+                Eu vou
 
-            Eu digo oi, ela nem nada
-            Passa na minha calçada
-            Dou bom dia, ela nem liga
-            Se ela chega, eu paro tudo
-            Se ela passa, eu fico todo
-            Se vem vindo, eu faço figa
+                Eu digo oi, ela nem nada
+                Passa na minha calçada
+                Dou bom dia, ela nem liga
+                Se ela chega, eu paro tudo
+                Se ela passa, eu fico todo
+                Se vem vindo, eu faço figa
 
-            Eu mando um beijo, ela não pega
-            Pisco olho, ela se nega
-            Faço pose, ela não vê
-            Jogo charme, ela ignora
-            Chego junto, ela sai fora
-            Eu escrevo, ela não lê
+                Eu mando um beijo, ela não pega
+                Pisco olho, ela se nega
+                Faço pose, ela não vê
+                Jogo charme, ela ignora
+                Chego junto, ela sai fora
+                Eu escrevo, ela não lê
 
-            Minha mina, minha amiga
-            Minha namorada
-            Minha gata, minha sina
-            Do meu condomínio
-            Minha musa, minha vida
-            Minha Monalisa
-            Minha Vênus, minha deusa
-            Quero seu fascínio
+                Minha mina, minha amiga
+                Minha namorada
+                Minha gata, minha sina
+                Do meu condomínio
+                Minha musa, minha vida
+                Minha Monalisa
+                Minha Vênus, minha deusa
+                Quero seu fascínio
 
-            Minha namorada
-            Do meu condomínio
-            Minha Monalisa
-            Quero seu fascínio
+                Minha namorada
+                Do meu condomínio
+                Minha Monalisa
+                Quero seu fascínio
 
-            Minha namorada
-            Do meu condomínio
-            Minha Monalisa
-            Quero seu fascínio
+                Minha namorada
+                Do meu condomínio
+                Minha Monalisa
+                Quero seu fascínio
 
-            Minha mina, minha amiga
-            Minha namorada
-            Minha gata, minha sina
-            Do meu condomínio
-            Minha musa, minha vida
-            Minha Monalisa
-            Minha Vênus, minha deusa
-            Quero seu fascínio
+                Minha mina, minha amiga
+                Minha namorada
+                Minha gata, minha sina
+                Do meu condomínio
+                Minha musa, minha vida
+                Minha Monalisa
+                Minha Vênus, minha deusa
+                Quero seu fascínio
 
-            Minha namorada
-            Do meu condomínio
-            Minha Monalisa
-            Quero seu fascínio
+                Minha namorada
+                Do meu condomínio
+                Minha Monalisa
+                Quero seu fascínio
 
-            Minha namorada
-            Do meu condomínio
-            Minha Monalisa
-            Quero seu fascínio
+                Minha namorada
+                Do meu condomínio
+                Minha Monalisa
+                Quero seu fascínio
 
-            Minha namorada
-            Do meu condomínio
-            Minha Monalisa
-            Quero seu fascínio
+                Minha namorada
+                Do meu condomínio
+                Minha Monalisa
+                Quero seu fascínio
 
-            Minha namorada
-            Do meu condomínio
-            Minha Monalisa
-            Quero seu fascínio
+                Minha namorada
+                Do meu condomínio
+                Minha Monalisa
+                Quero seu fascínio
 
-            Minha namorada
-            Do meu condomínio
-            Minha Monalisa
-            Quero seu fascínio
-            </center>
-        </pre>
-    </details>
+                Minha namorada
+                Do meu condomínio
+                Minha Monalisa
+                Quero seu fascínio
+            </pre>
+        </details>
+    </div>
 
     <p></p>
 
-    <div class="container-imagens">
+    <div class="imagens">
         <img src="https://npr.brightspotcdn.com/dims4/default/b07c3eb/2147483647/strip/true/crop/2187x2922+0+0/resize/1760x2352!/format/webp/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2016%2F02%2F26%2Fgettyimages-497767476_custom-f12df068fbaea9aad6ada0424dd9679c39d90414.jpg" alt="Seu Jorge" width="150" height="200">
         <img src="https://pub-24ea3407a0f24c8394eadaa45a05aa0c.r2.dev/capas/90511/thumbnails/m_90511ca.jpg" alt="Seu Jorge" width="150" height="200">
         <img src="https://www4.ecad.org.br/wp-content/uploads/2025/06/sjorge.jpg.webp" alt="Seu Jorge" width="150" height="200">
@@ -183,7 +304,9 @@
 
     <p></p>
     
-    <q><b>Nunca deixe ninguém te dizer que não pode fazer alguma coisa. Se você tem um sonho tem que correr atrás dele</b></q>
+    <div class="frase">
+        <q><b>Nunca deixe ninguém te dizer que não pode fazer alguma coisa. Se você tem um sonho tem que correr atrás dele</b></q>
+    </div>
 
 </body>
 </html>
